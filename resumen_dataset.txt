@@ -1,0 +1,48 @@
+============================================================
+          RESUMEN EJECUTIVO DEL DATAFRAME
+============================================================
+
+1. DIMENSIONES GENERALES:
+   - Cantidad de Filas: 118
+   - Cantidad de Columnas: 6
+
+2. ESTRUCTURA Y TIPOS DE DATOS (df.info()):
+<class 'pandas.DataFrame'>
+Index: 118 entries, 0 to 149
+Data columns (total 6 columns):
+ #   Column        Non-Null Count  Dtype  
+---  ------        --------------  -----  
+ 0   id            118 non-null    int64  
+ 1   largo_sepalo  118 non-null    float64
+ 2   ancho_sepalo  118 non-null    float64
+ 3   largo_petalo  118 non-null    float64
+ 4   ancho_petalo  118 non-null    float64
+ 5   especie       118 non-null    str    
+dtypes: float64(4), int64(1), str(1)
+memory usage: 8.1 KB
+
+
+3. PRESENCIA DE VALORES NULOS:
+   - id: 0 nulos
+   - largo_sepalo: 0 nulos
+   - ancho_sepalo: 0 nulos
+   - largo_petalo: 0 nulos
+   - ancho_petalo: 0 nulos
+   - especie: 0 nulos
+
+
+4. ESTADÍSTICAS DESCRIPTIVAS (df.describe()):
+                id  largo_sepalo  ancho_sepalo  largo_petalo  ancho_petalo         especie
+count   118.000000    118.000000    118.000000    118.000000    118.000000             118
+unique         NaN           NaN           NaN           NaN           NaN               3
+top            NaN           NaN           NaN           NaN           NaN  Iris-virginica
+freq           NaN           NaN           NaN           NaN           NaN              49
+mean     87.237288      6.129661      3.048305      4.315254      1.432203             NaN
+std      39.868519      0.687906      0.445439      1.528623      0.671506             NaN
+min       1.000000      5.100000      2.200000      1.200000      0.100000             NaN
+25%      59.250000      5.600000      2.800000      3.925000      1.200000             NaN
+50%      89.500000      6.100000      3.000000      4.700000      1.500000             NaN
+75%     120.750000      6.575000      3.300000      5.375000      1.900000             NaN
+max     150.000000      7.900000      4.400000      6.900000      2.500000             NaN
+
+============================================================
